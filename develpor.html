@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fashion Garments</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url('https://www.shutterstock.com/shutterstock/photos/1582436902/display_1500/stock-vector-fashion-background-seamless-clothes-pattern-vector-illustration-1582436902.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #f4f4f4;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.85);
+            z-index: -1;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin: 40px 0 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .product h3 {
+            margin: 10px 0 5px;
+        }
+
+        .product p {
+            margin: 5px 0;
+        }
+
+        .order-btn {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .order-btn:hover {
+            background-color: #218838;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        #about,
+        #contact {
+            background-color: #fff;
+            max-width: 800px;
+            margin: auto;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form p {
+            margin: 10px 0;
+        }
+
+        .contact-form a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-form a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Fashion Garments</h1>
+        <p>Stylish Wear for Boys, Kids & Ladies</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="section-title">🏠 Welcome to Our Garments Store</div>
+        <p style="text-align:center; max-width:700px; margin:auto;">
+            Explore our latest collection of fashionable garments tailored for every age and style.
+        </p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="section-title">👦 Gents Garments</div>
+        <div class="container">
+            <div class="product">
+                <img src="https://cdn.shopify.com/s/files/1/1007/6022/products/nmt_mn_shrt_fln_csl_P25C14_BLGN_img1.jpg?v=1590799826"
+                    alt="Flannel Shirt" />
+                <h3>Flannel Shirt</h3>
+                <p>Comfortable and casual wear</p>
+                <p><strong>Price:</strong> Rs. 1200</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/11/ff/08/11ff0861f159411cc74ecc60d41625bc.jpg"
+                    alt="Winter Boys Outfit" />
+                <h3>Winter Boys Outfit</h3>
+                <p>Warm and stylish for cold days</p>
+                <p><strong>Price:</strong> Rs. 1800</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="https://i.etsystatic.com/27271062/r/il/8a457d/5785662575/il_1080xN.5785662575_sdbw.jpg"
+                    alt="African Boys Suit" />
+                <h3>African Boys Suit</h3>
+                <p>Elegant traditional attire</p>
+                <p><strong>Price:</strong> Rs. 2500</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="section-title">🧒 Kids Garments</div>
+        <div class="container">
+            <div class="product">
+                <img src="https://s-media-cache-ak0.pinimg.com/originals/b3/82/30/b382305d7b91dd913f4498de32c5d5fa.jpg"
+                    alt="Kids Wedding Dress" />
+                <h3>Kids Wedding Dress</h3>
+                <p>Shiny and comfortable</p>
+                <p><strong>Price:</strong> Rs. 1500</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="https://cf.shopee.ph/file/5a23b46b4ab5002705e0d457090c4886" alt="Toddler Suit" />
+                <h3>Toddler Suit</h3>
+                <p>Formal wear for little gentlemen</p>
+                <p><strong>Price:</strong> Rs. 1700</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/9d/20/ac/9d20ac1216e15f1881d4c1b24721d3c8.jpg"
+                    alt="African Kids Wear" />
+                <h3>African Kids Wear</h3>
+                <p>Traditional and colorful</p>
+                <p><strong>Price:</strong> Rs. 1600</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="section-title">👗 Ladies Garments</div>
+        <div class="container">
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/4f/7e/3c/4f7e3c1d8b5f3e8c7e0f4e3d4e7e3c1d.jpg"
+                    alt="Embroidered Lawn Suit" />
+                <h3>Embroidered Lawn Suit</h3>
+                <p>Elegant summer wear with fine embroidery</p>
+                <p><strong>Price:</strong> Rs. 2200</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/2e/7a/7f/2e7a7f7b8e4f6e8b1ec2f1dce7eaa1f4.jpg"
+                    alt="Casual Maxi Dress" />
+                <h3>Casual Maxi Dress</h3>
+                <p>Comfortable and stylish for daily wear</p>
+                <p><strong>Price:</strong> Rs. 2000</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/72/1f/f9/721ff9c9f3e5a5db85c22b5b6926ef2a.jpg"
+                    alt="Stylish Evening Gown" />
+                <h3>Stylish Evening Gown</h3>
+                <p>Perfect for special occasions</p>
+                <p><strong>Price:</strong> Rs. 3500</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title">About Us</div>
+        <p>
+            Fashion Garments has been serving stylish wear for boys, kids, and ladies since 1999. Quality and comfort
+            are our priorities.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-title">Contact Us</div>
+        <div class="contact-form">
+            <p>Email: <a href="mailto:info@fashiongarments.com">info@fashiongarments.com</a></p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Fashion Street, Style City</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Fashion Garments. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
